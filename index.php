@@ -30,7 +30,9 @@
                 <h1 class="centered">Miresevini ne Paketohu + Nisu</h1>
                 <h2 id="text">Udhetime Turistike - Pushime - Qef</h2>
             </div>
-           
+           <?php
+           echo "Lorena Troshupa";
+           ?>
 
           <div class="us">
             <img src="images\people.png" alt="" id="photoHome">
