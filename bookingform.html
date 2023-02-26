@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="bookingform.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="video">
+      <video autoplay muted loop id="bookingVideo">
+        <source src="images\booking.mp4" type="video/mp4" />
+      </video>
+
+      <form>
+        <h1>REZERVO TANI</h1>
+
+        <label>Udhëtoni Nga:</label><br />
+        <input type="text" name="from" /><br />
+        <label>Udhëtoni Te:</label><br />
+        <input type="text" name="to" /><br />
+        <label>Nisja:</label><br />
+        <input type="date" name="departing" /><br />
+        <label>Kthimi:</label><br />
+        <input type="date" name="returning" /><br />
+        <label>Të Rritur:</label><br />
+        <input type="number" name="adults" value="1" /><br />
+        <label>Fëmije:</label><br />
+        <input type="number" name="children" value="0" /><br />
+        <label>Klasa e Udhëtimit:</label><br />
+        <select name="travel-class">
+          <option value="economy">Klasë Ekonomike</option>
+          <option value="private">Klasë Private</option></select
+        ><br /><br />
+        <input type="submit" value="Paraqit" />
+      </form>
+    </div>
+  </body>
+</html>
