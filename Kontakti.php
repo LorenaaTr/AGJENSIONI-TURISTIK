@@ -10,15 +10,14 @@
 </head>
 <body>
     <ul class="navbar">
-        <a href=""><img src="images\logo.png" alt="" id="logo"></a>
-        <li class="nav"><a class="active link" href="index.html" >Home</a></li>
-        <li class="nav"><a href="blog.html" class="link">Blog</a></li>
-        <li class="nav"><a href="#" class="link">Udhetime me Autobus</a></li>
-        <li class="nav"><a href="#" class="link">Udhetime me Airoplan</a></li>
-        <li class="nav"><a href="aboutus.html" class="link">Rreth Nesh</a></li>
-        <li class="nav"><a href="Kontakti.html" class="link">Kontakti</a></li>
-        <li class="nav"><a href="login.html" class="link"><i class="fa faIcon">&#xf2c0;</i></a></li>
-      </ul>
+    <a href=""><img src="images\logo.png" alt="" id="logo"></a>
+            <li class="nav"><a class="active link" href="index.php" >Home</a></li>
+            <li class="nav"><a href="blog.php" class="link">Blog</a></li>
+            <li class="nav"><a href="#" class="link">Udhetime me Autobus</a></li>
+            <li class="nav"><a href="#" class="link">Udhetime me Airoplan</a></li>
+            <li class="nav"><a href="aboutus.php" class="link">Rreth Nesh</a></li>
+            <li class="nav"><a href="Kontakti.php" class="link">Kontakti</a></li>
+            <li class="nav"><a href="login.php" class="link"><i class="fa faIcon">&#xf2c0;</i></a></li>
      
         <div>
             <img src="images\aboutus.jpg" alt="" id="photo">
