@@ -50,7 +50,7 @@
                 <small>Error message</small>
               </div>
               <div class="buttons">
-                <a href="index.html" class="cancel-button">Kthehu Mbrapa</a>
+                <a href="index.php" class="cancel-button">Kthehu Mbrapa</a>
                 <button type="submit">Regjistrohu</button>
               </div>
             </form>
