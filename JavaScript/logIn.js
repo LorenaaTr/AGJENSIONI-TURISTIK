@@ -1,41 +1,55 @@
-const form = document.getElementById("form");
-const username = document.getElementById("username");
-const password = document.getElementById("password");
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const password = document.getElementById('password');
 
-//Show input error message
+form.addEventListener('submit', e => {
+    e.preventDefault();
 
-function showError(input, message) {
-  const formControl = input.parentElement;
-  formControl.className = "form-control error";
-  const small = formControl.querySelector("small");
-  small.innerText = message;
-}
+    validateInputs();
 
-function showSuccess(input) {
-  const formControl = input.parentElement;
-  formControl.className = "form-control success";
-}
-
-//Email
-
-function isValidEmail(email) {
-  const re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
-}
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  if (username.value === "") {
-    showError(username, "Emri i përdouesit është i nevojshëm");
-  } else {
-    showSuccess(username);
-  }
-
-  if (password.value === "") {
-    showError(password, "Fjalëkalimi është i nevojshëm");
-  } else {
-    showSuccess(password);
-  }
 });
+
+const setError = (element,message) => {
+    const  inputControl = element.parentElement;
+    const errorDsiplay = inputControl.querySelector('.error');
+
+    errorDsiplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+}
+
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDsiplay = inputControl.querySelector('.error');
+
+    errorDsiplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+
+const validateInputs = () => {
+
+const usernameValue = username.value.trim();
+const passwordValue = password.value.trim();
+
+
+if(usernameValue === '') {
+    setError(username, 'Emri i përdoruesit është i nevojshem');
+
+
+} else {
+    setSuccess(username);
+
+}
+
+
+if(passwordValue.length < 6) {
+    setError(password, 'Duhet pasur së paku 6 karaktere')
+
+} else {
+    setSuccess(password);
+}
+
+
+};
